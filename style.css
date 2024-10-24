@@ -1,0 +1,316 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: borderns-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #253439;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+button:hover .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #b29e84;
+    transform: scale(1.05);
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #b29e84;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+ }
+ 
+
+ h2.titulo{
+    color: #b29e84;
+    font-size: 38px;
+    text-align: center;
+ }
+
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 30px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    max-width: 58%;
+    overflow: hidden;
+    height: auto;
+}
+
+header a{
+    color: #5c5c5c; 
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+head nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 160px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #b29e84;
+    font-size: 42px;
+    line-height: 50px;   
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0; 
+    font-size: 20px;
+}
+
+.topo-do-site img{
+    max-width: 70%;
+    overflow: hidden;
+    height: auto;
+    border: 0;
+    border-radius: 80%;
+}
+
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    box-shadow: 0px 0px 8px #b29e84;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
+}
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+    padding: 100px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #5c5c5c;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #b29e84;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 300px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 170px;
+}
+
+.sobre img{
+    max-width: 150%;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    color: #b29e84;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #b29e84;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO FORMULARIO */
+section.formulario{
+    padding: 40px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border-color: #5c5c5c;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #253439;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 200px;
+    background-color: #b29e84;
+    color: #000;
+    font-weight: 700px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+/* ESTILO RODAPÉ */
+footer{
+    padding: 60px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #b29e84;
+}
+
+footer .logo-footer img{
+    max-width: 38%;
+    overflow: hidden;
+    height: auto;
+}
+
+footer .line-footer p i{
+    color: #b29e84;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px){
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    section.topo-do-site{
+        padding: 10px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+}
