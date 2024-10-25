@@ -1,128 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+    <!--HEAD-->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device.width, initial-scale=1.0">
         <!-- BOOTSRATP ICONS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="style.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- ICON -->
         <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+        <!-- SCRIPT -->
         <script src="menu.js" defer></script>
+        <!-- TITLE -->
         <title>Emiliana Candida - Portfolio</title>
     </head>
+    <!--HEAD-->
+    <!--BODY-->
     <body>
+        <!--HEADER-->
         <header>
+            <!--INTERFACE-->
             <div class="interface">
-                <div class="logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Logo do portifolio">
-                    </a>
-                </div><!--Logo-->
+                <!--LOGO-->
+                <div class="logo"><img src="images/logo.png" alt="logo-portfolio"></div>
+                <!--LOGO-->
+                <!--MENU DESKTOP-->
                 <nav class="menu-desktop">
                     <ul>
-                        <li><a href="#topo-do-site">Início</a></li>
-                        <li><a href="#especialidades">Especialidade</a></li>
-                        <li><a onclick href="#sobre">Sobre</a></li>
-                        <div class="btn-contato">
-                            <a onclick href="#formulario">
-                                <button>Contato</button>
-                            </a>
-                        </div><!--button-contato-->
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
                     </ul>
-                </nav><!--menu-desktop-->
-            </div><!--Interface-->
+                </nav>
+                <!--MENU DESKTOP-->
+                <!--BOTÃO CONTATO-->
+                <div class="btn-contato"><a href="#"><button>Contato</button></a></div>
+                <!--BOTÃO CONTATO-->
+            </div>
+            <!--INTERFACE-->
         </header>
+        <!--HEADER-->
+
+        <!--MAIN-->
         <main>
-            <section class="topo-do-site">
+            <!--SECTION TOP-->
+            <section id="topo-do-site" class="topo-do-site">
+                <!--INTERFACE-->
                 <div class="interface">
+                    <!--FLEX-->
                     <div class="flex">
-                        <div class="txt-topo-site">
-                            <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL.</h1>
-                            <p>Projetos de tecnologia que impulsionam a inovação. Soluções eficientes em desenvolvimento de software, automação e otimização 
-                                de sistemas, entregando resultados práticos e escaláveis.</p>
-                            <div class="btn-contato">
-                                <a href="#">
-                                    <button>Entre em contato</button>
-                                </a>
-                            </div><!--button-contato-->
-                        </div><!--txt-topo-site-->
+                        <!--TOPO-DO-SITE-->
+                        <div class="topo-do-site">
+                            <h1>CONECTANDO IDEIAS AO MUNDO DIGITAL.</h1>
+                            <P>Projetos de tecnologia que impulsionam a inovação. Soluções eficientes em desenvolvimento de software, automação, otimização de sistemas e cibersegurança, entregando resultados práticos e escaláveis.</P>
+                            <!--BOTÃO CONTATO-->
+                            <div class="btn-contato"><a href="#"><button>Entre em contato</button></a></div>
+                            <!--BOTÃO CONTATO-->
+                            </div>
+                        <!--TOPO-DO-SITE-->
+                        <!--IMG-TOPO-SITE-->
                         <div class="img-topo-site">
-                            <img src="images/portifolio.jpeg" alt="">
-                        </div><!--img-topo-site-->
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--topo-do-site-->
-            <section class="especialidades">
-                <div class="interface">
-                    <h2 class="titulo">MINHAS ESPECIALIDADES.</h2>
-                    <div class="flex">
-                        <div class="especialidades-box">
-                            <i class="bi bi-code-slash"></i>
-                            <h3>Desenvolvimento</h3>
-                            <p>Criação de soluções digitais modernas e funcionais, incluindo websites, aplicativos mobile e desktop. Com foco em design 
-                            intuitivo, desempenho otimizado e experiências de usuário envolventes, as soluções personalizadas combinam tecnologia de ponta 
-                            e estética para entregar resultados impactantes.
-                            </p>
-                        </div><!--especialidades-box-->
-                        <div class="especialidades-box">
-                            <i class="bi bi-search"></i>
-                            <h3>Perícia Forense Digital</h3>
-                            <p>Investigação especializada em perícia forense digital, focada na análise de evidências eletrônicas, recuperação de dados e 
-                            detecção de fraudes. Utilizando metodologias avançadas para garantir precisão e confiabilidade na resolução de casos complexos 
-                            no ambiente digital.
-                            </p>
-                        </div><!--especialidades-box-->
-                    </div><!--flex-->
-                </div><!--Interface-->
-            </section><!--especialidades-->
-            <section class="sobre">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="img-sobre">
-                            <img src="images/sobre.jpg" alt="">
-                        </div><!--img-sobre-->
-                        <div class="txt-sobre">
-                            <h2>MUITO PRAZER, SOU EMILIANA.</h2>
-                            <p>Engenheira da Computação (CREA 411835MG) com sólida experiência como analista e desenvolvedora de sistemas, atuando na criação e implementação de soluções 
-                                tecnológicas que atendem às necessidades do mercado. Com um forte enfoque na qualidade e na eficiência, sou responsável pela análise de requisitos, 
-                                desenvolvimento de sistemas e gerenciamento de projetos, sempre buscando inovações que otimizem processos e melhorem a experiência do usuário
-                            </p>
-                            <p>Além disso, atuo como perita digital forense na Justiça brasileira, onde utilizo minha expertise em tecnologia para investigar e analisar evidências 
-                                eletrônicas. Essa função exige um olhar crítico e habilidades analíticas avançadas, permitindo a recuperação de dados e a identificação de fraudes 
-                                em ambientes digitais. Acredito na importância da integridade das informações e trabalho para garantir que a tecnologia sirva como um aliado na 
-                                busca por justiça.
-                            </p>
-                            <p>Com um compromisso contínuo com a aprendizagem e a atualização profissional, estou sempre em busca de novas oportunidades para aplicar minhas 
-                                habilidades e contribuir para projetos que façam a diferença.
-                            </p>
-                            <div class="btn-social">
-                                <a href="https://www.linkedin.com/in/emilianacandidasilva/"><button><i class="bi bi-linkedin"></i></button></a>
-                                <a href="https://github.com/mleeana"><button><i class="bi bi-github"></i></button></a>
-                                <a href="https://wa.me/+5532991176886"><button><i class="bi bi-whatsapp"></i></button></a>
-                            </div><!--btn-social-->
-                        </div><!--txt-sobre-->
-                    </div><!--flex-->
-                </div><!--Interface-->
-            </section><!--sobre-->
-        <footer>
-            <div class="interface">
-                <div class="line-footer">
-                    <div class="flex">
-                        <div class="logo-footer">
-                        </div><!--logo-footer-->
-                        <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/emilianacandidasilva/"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/mleeana"><button><i class="bi bi-github"></i></button></a>
-                            <a href="https://wa.me/+5532991176886"><button><i class="bi bi-whatsapp"></i></button></a>
-                        </div><!--btn-social-->
-                </div><!--flex-->
-                </div><!--line-footer-->
-                <div class="line-footer borda">
-                </div><!--line-footer-->
-            </div><!--Interface-->
-        </footer>
+                            <img src="images/portifolio.jpeg" alt="portfolio">
+                        </div>
+                        <!--IMG-TOPO-SITE-->
+                    </div>
+                    <!--FLEX-->
+                </div>
+                <!--INTERFACE-->
+            </section>
+            <!--SECTION TOP-->
+        </main>
+        <!--MAIN-->
+
     </body>
+    <!--BODY-->
 </html>
