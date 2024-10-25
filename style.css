@@ -264,54 +264,6 @@ section.sobre .flex{
     transition: .2s;
 }
 
-/* ESTILO FORMULARIO */
-section.formulario{
-    padding: 40px 4%;
-}
-
-form{
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-form input, form textarea{
-    width: 100%;
-    border-color: #5c5c5c;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #253439;
-    font-size: 18px;
-}
-
-form textarea{
-    resize: none;
-    max-height: 300px;
-}
-
-form .btn-enviar{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input{
-    width: 200px;
-    background-color: #b29e84;
-    color: #000;
-    font-weight: 700px;
-    cursor: pointer;
-    font-weight: 600;
-    border: 0;
-    border-radius: 30px;
-    transition: .2s;
-}
-
 /* ESTILO RODAPÉ */
 footer{
     padding: 60px 4%;
@@ -329,11 +281,6 @@ footer .line-footer{
     border-top: 2px solid #b29e84;
 }
 
-footer .logo-footer img{
-    max-width: 48%;
-    overflow: hidden;
-    height: auto;
-}
 
 footer .line-footer p i{
     color: #b29e84;
