@@ -341,10 +341,15 @@ footer .line-footer img{
         flex-direction: column;
     }
 
+    main{
+        max-height: 98vh;
+    }
+
     h2.titulo{
         font-size: 34px;
         line-height: 30px;
     }
+
 
     /* HEADER */
     header img{
@@ -355,31 +360,43 @@ footer .line-footer img{
         display: none;
     }
 
+    
     /* MAIN */
     section.topo-do-site{
-        padding: 150px 8%;
+        padding: 200px 4%;
     }
-
     section.topo-do-site .flex{
-        gap: 40px;
-    }
-   
-    .scroll{
-        padding: 20px 4%;
+        gap: 60px;
     }
 
     .topo-do-site h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .topo-do-site p{
+        color: var(--grey);
         font-size: 30px;
-        line-height: 40px;
+        margin: 40px 0%;
     }
 
     .topo-do-site .img-topo-site img{
-        width: 100%;
+        max-width: 100%;
     }
 
     /* SECTION ESPECIALIDADES */
     section.especialidades{
-        padding: 40px 8%;
+        padding: 200px 4%;
+    }
+
+    .especialidades .especialidades-box h3{
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .especialidades .especialidades-box p{
+        font-size: 28px;
+        margin: 15px 0;
     }
 
     /* SECTION SOBRE */
@@ -393,12 +410,31 @@ footer .line-footer img{
         text-align: center;
     }
 
+    section.sobre p{
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+
     .btn-social{
         text-align: center;
     }
 
     section.sobre .img-sobre img{
         max-width: 100%;
+    }
+
+    /* SECTION CONTATO */
+    section.contato{
+        padding: 200px 4%;
+        min-height: 50vh;
+    }
+
+    form input, form textarea{
+        width: 100%;
+        padding: 20px 15px;
+        color: var(--grey);
+        font-size: 25px;
     }
     
     /* FOOTER */
