@@ -346,6 +346,12 @@ footer .line-footer img{
         margin-bottom: 30px;
         text-align: center;
     }
+
+    .btn-social button {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+    }
     
     /* CABEÇALHO */ 
     .header .logo img{
