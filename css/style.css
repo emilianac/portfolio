@@ -165,17 +165,10 @@ section.topo-do-site .flex{
     justify-content: center;
 }
 
-.scroll button{
-    background-color: var(--blue-form);
-}
-
-.scroll button:hover{
-    box-shadow: none;
-}
-
 .scroll i{
     color: var(--nude);
     font-size: 70px;
+    cursor: pointer;
 }
 
 .scroll i:hover{
