@@ -335,46 +335,62 @@ footer .line-footer img{
     }
 }
 
-@media screen and (max-width: 1020px){
-    /* LOGO */
-    .logo img{
-        max-width: 40%;
-    }
+@media screen and (max-width: 700px){
     /* CLASSES GERAIS */
     .flex{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
+
+    main{
+        max-height: 90vh;
+    }
+
     h2.titulo{
         font-size: 34px;
         line-height: 35px;
         margin-bottom: 30px;
         text-align: center;
     }
+    
     /* CABEÇALHO */ 
+    .header .logo img{
+        max-width: 40%;
+    }
+
     .menu-desktop, .btn-contato{
         display: none;
     }
+
     /* TOPO DO SITE */
     section.topo-do-site .flex{
         gap: 40px;
     }
     section.topo-do-site{
-        padding: 20px 8%;
+        padding: 200px 8%;
+        max-height: 100vh;
     }
     .topo-do-site h1{
-        font-size: 30px;
+        font-size: 33px;
+        line-height: 35px;
+        margin-bottom: 30px;
     }
     .topo-do-site .img-topo-site img{
         width: 100%;
+        height: auto;
         align-items: center;
     }
+
+    .scroll{
+        padding: 200px 0%;
+    }
+
      /* ESPECIALIDADES */
      section.especialidades{
-        padding: 40px 4%;
+        padding: 20px 4%;
      }
      /* SOBRE */
      section.sobre{
-        padding: 80px 8%;
+        padding: 250px 8%;
      }
      .sobre .txt-sobre h2{
         font-size: 34px;
