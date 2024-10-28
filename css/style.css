@@ -12,10 +12,6 @@ html{
     scroll-behavior: smooth;
 }
 
-main{
-    max-height: 115vh;
-}
-
 body{
     background-color: #253439;
     height: 50vh;
@@ -29,8 +25,7 @@ body{
 }
 
 section {
-    padding: 50px 4%;
-    min-height: 100vh;
+    padding: 300px 5%;
 }
 
 .interface{
@@ -129,9 +124,9 @@ header nav ul li{
 
 /* MAIN */
 section.topo-do-site{
-    padding: 200px 4%;
-    min-height: 100vh;
+    padding: 300px 4%;
 }
+
 section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
@@ -242,8 +237,7 @@ section.sobre .img-sobre img{
 
 /* SECTION FORMULARIO */
 section.contato{
-    padding: 80px 4%;
-    min-height: 70vh;
+    min-height: 50vh;
 }
 
 form{
@@ -253,7 +247,7 @@ form{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 form input, form textarea{
@@ -346,10 +340,6 @@ footer .line-footer img{
         flex-direction: column;
     }
 
-    main{
-        max-height: 40vh;
-    }
-
     h2.titulo{
         font-size: 34px;
         line-height: 35px;
@@ -372,25 +362,18 @@ footer .line-footer img{
     }
     section.topo-do-site{
         padding: 200px 8%;
-        min-height: 100vh;
+        min-height: 50vh;
     }
+
     .topo-do-site h1{
         font-size: 33px;
         line-height: 35px;
         margin-bottom: 30px;
     }
-    .topo-do-site .img-topo-site img{
-        display: none;
-    }
 
-    .scroll{
-        display: none;
-    }
+    /* ESPECIALIDADES */
 
-     /* ESPECIALIDADES */
-     section.especialidades{
-        padding: 20px 4%;
-     }
+
      /* SOBRE */
      section.sobre{
         padding: 250px 8%;
@@ -407,6 +390,17 @@ footer .line-footer img{
      .img-sobre img{
         width: 100%;
      }
+
+     /* FORMULARIO */
+     section.contato{
+        max-height: 10vh;
+    }
+
+     form{
+       max-width: 400px;
+    }
+
+
      /* FOOTER */
      footer.flex{
         flex-direction: column;
