@@ -340,14 +340,14 @@ footer .line-footer img{
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
     /* CLASSES GERAIS */
     .flex{
         flex-direction: column;
     }
 
     main{
-        max-height: 90vh;
+        max-height: 40vh;
     }
 
     h2.titulo{
