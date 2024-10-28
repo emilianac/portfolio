@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main{
     max-height: 115vh;
 }
@@ -159,6 +163,14 @@ section.topo-do-site .flex{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.scroll button{
+    background-color: var(--blue-form);
+}
+
+.scroll button:hover{
+    box-shadow: none;
 }
 
 .scroll i{
