@@ -358,10 +358,10 @@ footer .line-footer img{
 
     /* TOPO DO SITE */
     section.topo-do-site .flex{
-        gap: 40px;
+        gap: 20px;
     }
     section.topo-do-site{
-        padding: 200px 4%;
+        padding: 120px 4%;
         min-height: 50vh;
     }
 
@@ -372,7 +372,7 @@ footer .line-footer img{
     }
 
     .scroll{
-        padding: 100px 4%;
+        padding: 10px 4%;
     }
 
     /* ESPECIALIDADES */
