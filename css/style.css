@@ -25,8 +25,8 @@ body{
 }
 
 section {
-    padding: 40px 4%;
-    min-height: 90vh;
+    padding: 50px 4%;
+    max-height: 50vh;
 }
 
 .interface{
@@ -335,10 +335,16 @@ footer .line-footer img{
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1200px) {
     /* GENERAL */
     .flex{
         flex-direction: column;
+    }
+
+    .interface{
+        max-width: 1200px;
+        margin: 0 auto; 
+        padding: 0 20px;
     }
 
     h2.titulo{
@@ -458,7 +464,7 @@ footer .line-footer img{
     }
 }
 
-@media screen and (min-width: 3440px) {
+@media screen and (min-width: 1200px) {
     *{
         margin: 0;
         padding: 0;
