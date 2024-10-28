@@ -367,7 +367,7 @@ footer .line-footer img{
     }
     section.topo-do-site{
         padding: 200px 8%;
-        max-height: 100vh;
+        min-height: 100vh;
     }
     .topo-do-site h1{
         font-size: 33px;
