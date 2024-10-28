@@ -380,6 +380,13 @@ footer .line-footer img{
         padding: 100px 4%;
     }
 
+    .especialidades h2{
+        font-size: 34px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
      /* SOBRE */
      section.sobre{
         padding: 100px 8%;
