@@ -154,7 +154,7 @@ section.topo-do-site .flex{
 }
 
 .scroll{
-    padding: 200px 4%;
+    padding: 150px 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,11 +371,14 @@ footer .line-footer img{
         margin-bottom: 30px;
     }
 
+    .scroll{
+        padding: 100px 4%;
+    }
+
     /* ESPECIALIDADES */
     section.especialidades{
         padding: 100px 4%;
     }
-
 
      /* SOBRE */
      section.sobre{
