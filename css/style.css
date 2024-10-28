@@ -355,7 +355,7 @@ footer .line-footer img{
     
     /* CABEÇALHO */ 
     .header .logo img{
-        max-width: 30%;
+        max-width: 20%;
     }
 
     .menu-desktop, .btn-contato{
@@ -367,7 +367,7 @@ footer .line-footer img{
         gap: 20px;
     }
     section.topo-do-site{
-        padding: 300px 4%;
+        padding: 200px 4%;
         min-height: 50vh;
     }
 
