@@ -384,7 +384,7 @@ footer .line-footer img{
     }
 
     .scroll{
-        padding: 200px 0%;
+        display: none;
     }
 
      /* ESPECIALIDADES */
