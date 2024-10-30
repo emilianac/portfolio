@@ -122,6 +122,25 @@ header nav ul li{
     padding: 0 40px;
 }
 
+
+header .btn-translate{
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--nude);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+.btn-translate i{
+    color: var(--blue);
+}
+
+
 /* MAIN */
 section.topo-do-site{
     padding: 300px 4%;
@@ -173,12 +192,12 @@ section.topo-do-site .flex{
 
 /* SECTION ESPECIALIDADES */
 section.especialidades .flex{
-    gap: 60px;
+    gap: 50px;
 }
 
 .especialidades .especialidades-box{
     color: var(--grey);
-    padding: 40px;
+    padding: 50px;
     border-radius: 20px;
     margin-top: 50px;
     transition: .2s;
