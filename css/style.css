@@ -12,10 +12,14 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    max-height: 100vh;
+}
+
 body{
     background-color: #253439;
-    height: 50vh;
 }
+
 :root{
     --blue: #253439;
     --blue-form: #2B3C42;
@@ -80,7 +84,7 @@ h2.titulo{
 
 /* HEADER */
 header{
-    padding: 10px 4%;
+    padding: 8px 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -96,7 +100,7 @@ header >.interface{
 }
 
 header img{
-    max-width: 120px;
+    max-width: 90px;
     overflow: hidden;
     height: auto;
 }
@@ -123,6 +127,11 @@ header nav ul li{
 }
 
 /* MAIN */
+section.topo-do-site >.interface{
+    margin: 0 auto;
+    padding: 100px 5%;
+}
+
 section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
@@ -150,7 +159,7 @@ section.topo-do-site .flex{
 }
 
 .scroll{
-    padding: 150px 4%;
+    padding: 70px 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,6 +340,7 @@ footer .line-footer img{
     }
 }
 
+
 @media screen and (max-width: 1000px){
     /* CLASSES GERAIS */
     .flex{
@@ -338,7 +348,7 @@ footer .line-footer img{
     }
 
     h2.titulo{
-        font-size: 34px;
+        font-size: 30px;
         line-height: 35px;
         margin-bottom: 30px;
         text-align: center;
@@ -346,20 +356,20 @@ footer .line-footer img{
 
     /* CABEÇALHO */ 
     .header .logo img{
-        max-width: 15%;
+        max-width: 15px;
     }
-
+    
     .menu-desktop, .btn-contato{
         display: none;
     }
 
     /* TOPO DO SITE */
     section.topo-do-site .flex{
-        gap: 20px;
+        gap: 5px;
     }
+    
     section.topo-do-site{
-        padding: 400px 4%;
-        min-height: 50vh;
+        padding: 50px 4%;
     }
 
     .topo-do-site h1{
@@ -368,13 +378,14 @@ footer .line-footer img{
         margin-bottom: 30px;
     }
 
-    .scroll{
-        padding: 10px 4%;
+    .topo-do-site .img-topo-site img{
+        max-width: 100%;     
     }
+
 
     /* ESPECIALIDADES */
     section.especialidades{
-        padding: 100px 4%;
+        padding: 168px 4%;
     }
 
     .especialidades h2{
@@ -386,7 +397,7 @@ footer .line-footer img{
 
      /* SOBRE */
      section.sobre{
-        padding: 100px 8%;
+        padding: 50px 8%;
      }
      .sobre .txt-sobre h2{
         font-size: 30px;
@@ -404,7 +415,7 @@ footer .line-footer img{
      /* FORMULARIO */
      section.contato{
         max-height: 100vh;
-        padding: 200px 4%;
+        padding: 50px 4%;
     }
 
      form{
