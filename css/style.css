@@ -370,6 +370,10 @@ footer .line-footer img{
     section.topo-do-site{
         padding: 5px 4%;
     }
+    
+    .scroll{
+        display: none;
+    }
 
     .topo-do-site h1{
         font-size: 33px;
