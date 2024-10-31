@@ -340,7 +340,6 @@ footer .line-footer img{
     }
 }
 
-
 @media screen and (max-width: 1000px){
     /* CLASSES GERAIS */
     .flex{
@@ -369,7 +368,7 @@ footer .line-footer img{
     }
     
     section.topo-do-site{
-        padding: 50px 4%;
+        padding: 5px 4%;
     }
 
     .topo-do-site h1{
@@ -385,7 +384,7 @@ footer .line-footer img{
 
     /* ESPECIALIDADES */
     section.especialidades{
-        padding: 168px 4%;
+        padding-top: 50px 4%;
     }
 
     .especialidades h2{
@@ -397,8 +396,9 @@ footer .line-footer img{
 
      /* SOBRE */
      section.sobre{
-        padding: 50px 8%;
+        padding-top: 50px 8%;
      }
+
      .sobre .txt-sobre h2{
         font-size: 30px;
         line-height: 35px;
@@ -415,7 +415,7 @@ footer .line-footer img{
      /* FORMULARIO */
      section.contato{
         max-height: 100vh;
-        padding: 50px 4%;
+        padding: 190px 4%;
     }
 
      form{
