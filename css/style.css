@@ -371,6 +371,13 @@ footer .line-footer img{
         flex-direction: column;
     }
 
+    h2.titulo{
+      font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
     /* CABEÇALHO */ 
     .header .logo img{
         max-width: 15px;
@@ -393,6 +400,19 @@ footer .line-footer img{
         display: none;
     }
 
+    .topo-do-site h1{
+        font-size: 33px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .topo-do-site p{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
     .topo-do-site .img-topo-site img{
         max-width: 100%;     
     }
@@ -402,7 +422,14 @@ footer .line-footer img{
     section.especialidades{
         padding-top: 50px 4%;
     }
-    
+
+    .especialidades h2{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
      /* SOBRE */
      section.sobre{
         padding-top: 50px 8%;
