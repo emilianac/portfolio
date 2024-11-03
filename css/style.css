@@ -406,6 +406,13 @@ footer .line-footer img{
         margin-bottom: 30px;
     }
 
+    .topo-do-site p{
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
     .topo-do-site .img-topo-site img{
         max-width: 100%;     
     }
