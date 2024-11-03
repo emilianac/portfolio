@@ -29,7 +29,7 @@ body{
 }
 
 section {
-    padding: 300px 5%;
+    padding-top: 300px 5%;
 }
 
 .interface{
@@ -127,6 +127,10 @@ header nav ul li{
 }
 
 /* MAIN */
+section.topo-do-site{
+    padding: 200px 4%;
+}
+
 section.topo-do-site >.interface{
     margin: 0 auto;
     padding: 100px 5%;
@@ -177,6 +181,10 @@ section.topo-do-site .flex{
 }
 
 /* SECTION ESPECIALIDADES */
+section.especialidades{
+    padding: 200px 4%;
+}
+
 section.especialidades .flex{
     gap: 50px;
 }
@@ -207,7 +215,7 @@ section.especialidades .flex{
 
 /* SECTION SOBRE */
 section.sobre{
-    padding: 40px 4%;
+    padding: 300px 4%;
 }
 
 section.sobre .flex{
@@ -240,10 +248,27 @@ section.sobre .img-sobre img{
     text-align: justify;
 }
 
+/* SECTION FORMACAO */
+section.formacao{
+    padding: 150px 4%;
+}
+
+section.formacao .flex{
+    flex-direction: column;
+    gap: 60px;
+}
+
+.formacao .especialidades-box{
+    color: var(--grey);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: .2s;
+}
 
 /* SECTION FORMULARIO */
 section.contato{
-    min-height: 50vh;
+    padding: 300px 4%;
 }
 
 form{
