@@ -186,7 +186,8 @@ section.especialidades{
 }
 
 section.especialidades .flex{
-    gap: 50px;
+    gap: 50px;   
+    justify-content: center;
 }
 
 .especialidades .especialidades-box{
@@ -213,9 +214,152 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
+.especialidades .card {
+    width: 360px;
+    height: auto;
+    min-height: 500px;
+    perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: var(--grey);
+    transform: rotateY(180deg);
+}
+
+.card-back h4{
+    font-size: 28px;
+    color: var(--nude);
+    margin: 15px 0;
+}
+
+.card.flipped .card-back {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.card-front {
+    transition: opacity 0.5s;
+}
+
+.card.flipped .card-front {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* SECTION HABILIDADES */
+section.skills {
+  padding: 100px 10%;
+  background-color: var(--blue);
+}
+
+section.skills .flex {
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.skills .titulo {
+  margin-bottom: 60px;
+}
+
+.skills-box {
+  background-color: var(--blue-form);
+  padding: 50px;
+  border-radius: 20px;
+  color: var(--grey);
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 0 8px var(--border-color);
+  transition: .2s;
+}
+
+.skills-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--nude);
+}
+
+.skills-box h3 {
+  font-size: 28px;
+  color: var(--nude);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--nude);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar > div {
+  height: 100%;
+  background-color: var(--nude);
+  border-radius: 10px 0 0 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Lista de Frameworks & Tools */
+.tools-list {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--nude);
+  line-height: 1.8;
+}
+
+.tools-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.tools-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--nude);
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 0;
+}
+
 /* SECTION SOBRE */
 section.sobre{
-    padding: 300px 4%;
+    padding: 200px 4%;
 }
 
 section.sobre .flex{
@@ -249,26 +393,135 @@ section.sobre .img-sobre img{
 }
 
 /* SECTION FORMACAO */
-section.formacao{
-    padding: 150px 4%;
+section.formacao {
+  padding: 100px 10%;
+  background-color: var(--blue);
 }
 
-section.formacao .flex{
-    flex-direction: column;
-    gap: 60px;
+section.formacao .titulo {
+  margin-bottom: 60px;
 }
 
-.formacao .especialidades-box{
-    color: var(--grey);
-    padding: 50px;
-    border-radius: 20px;
-    margin-top: 50px;
-    transition: .2s;
+section.formacao .flex {
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formacao-box {
+  background-color: var(--blue-form);
+  padding: 40px;
+  border-radius: 20px;
+  color: var(--grey);
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  box-shadow: 0 0 8px var(--border-color);
+  transition: .2s;
+}
+
+.formacao-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--nude);
+}
+
+.formacao-box h3 {
+  font-size: 24px;
+  color: var(--nude);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.formacao-box p {
+  font-size: 16px;
+  color: var(--grey);
+  margin-bottom: 8px;
+}
+
+.formacao-box span {
+  font-size: 14px;
+  color: var(--nude);
+  font-weight: 500;
+}
+
+/* SECTION CERTIFICACAO */
+
+section.certificacao {
+  padding: 100px 10%;
+  background-color: var(--blue);
+}
+
+section.certificacao .titulo {
+  margin-bottom: 60px;
+}
+
+section.certificacao .flex {
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificacao-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--nude);
+}
+
+.certificacao-box {
+  background-color: var(--blue-form);
+  padding: 40px;
+  border-radius: 20px;
+  color: var(--grey);
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  box-shadow: 0 0 8px var(--border-color);
+  transition: .2s;
+}
+
+
+.certificacao-box {
+  background-color: var(--blue-form);
+  padding: 40px;
+  border-radius: 20px;
+  color: var(--grey);
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  box-shadow: 0 0 8px var(--border-color);
+  transition: .2s;
+}
+
+.certificacao-box h3 {
+  font-size: 24px;
+  color: var(--nude);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.certificacao-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--nude);
+}
+
+.certificacao-box p {
+  font-size: 16px;
+  color: var(--grey);
+  margin-bottom: 8px;
+}
+
+.certificacao-box span {
+  font-size: 14px;
+  color: var(--nude);
+  font-weight: 500;
 }
 
 /* SECTION FORMULARIO */
 section.contato{
-    padding: 300px 4%;
+    padding: 150px 4%;
 }
 
 form{
@@ -320,51 +573,83 @@ form .btn-enviar input:hover{
 }
 
 /* FOOTER */
-footer{
-    padding: 60px 4%;
-    box-shadow: 0 0 40px 10px var(--blue-form);
+.footer {
+  background-color: var(--blue);
+  color: var(--nude);
+  padding: 40px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid var(--border-color);
 }
 
-footer .flex{
-    justify-content:  space-between;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-footer .line-footer{
-    padding: 20px 0;
+.footer-logo img {
+  width: 60px;
+  border-radius: 0%;
 }
 
-.borda{
-    border-top: 2px solid var(--nude);
+.footer-logo h3 {
+  margin: 10px 0 5px;
 }
 
-footer .line-footer p i{
-    color: var(--nude);
-    font-size: 22px;
+.footer-logo p {
+  font-size: 14px;
+  color: var(--nude);
 }
 
-footer .line-footer p a{
-    color: var(--nude);
-    font-size: 18px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+  color: var(--nude);
 }
 
-footer .line-footer img{
-    max-width: 78px;
-    overflow: hidden;
-    height: auto;
+.footer-links ul {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
+.footer-links ul li {
+  margin-bottom: 8px;
 }
 
+.footer-links ul li a {
+  color: var(--nude);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: var(--nude);
+}
+
+.social-icons a {
+  color: var(--nude);
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--nude);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsivo */
 @media screen and (max-width: 1000px){
     /* CLASSES GERAIS */
     .flex{
@@ -456,14 +741,24 @@ footer .line-footer img{
     }
 
      /* FOOTER */
-     footer.flex{
-        flex-direction: column;
-        gap: 40px;
-     }
-     footer .line-footer{
-        text-align: center;
+      .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-social {
+    margin-top: 20px;
+  }
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
     }
-    footer .logo-footer img{
-        max-width: 20%;
+    100%{
+        top: 30px;
     }
 }
+

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device.width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- BOOTSRATP ICONS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -56,7 +56,7 @@
                         <!--TOPO-DO-SITE-->
                         <div class="topo-do-site">
                             <h1>Hey mundo! Sou Emiliana.</h1>
-                            <P>Minha missão? Tirar suas ideias do papel e criar soluções digitais eficientes, seguras e cheias de criatividade — na prática, sem enrolar.</p>
+                            <p>Minha missão? Tirar suas ideias do papel e criar soluções digitais eficientes, seguras e cheias de criatividade — na prática, sem enrolar.</p>
                             <p>Ah, e se o papo é cibersegurança, perícias ou laudos técnicos, pode contar comigo para cuidar de tudo com atenção e competência.</p>
                             <!--BOTÃO CONTATO-->
                             <div class="btn-contato"><a href="#contato"><button>Entre em contato</button></a></div>
@@ -71,9 +71,11 @@
                     </div>
                     <!--FLEX-->
                 <!--SCROLL-->
-                <div class="scroll"><a href="">
-                </a><i class="bi bi-chevron-compact-down" id="btn-scroll"></i></a>
-            </div>
+                <div class="scroll">
+                    <a href="#especialidades">
+                        <i class="bi bi-chevron-compact-down" id="btn-scroll"></i>
+                    </a>
+                </div>
             <!--SCROLL-->
                 </div>
                 <!--INTERFACE-->
@@ -84,35 +86,146 @@
 
         <!--SECTION ESPECIALIDADES-->
         <section class="especialidades" id="especialidades">
-            <!--INTERFACE-->
             <div class="interface">
                 <h2 class="titulo">MINHAS ÁREAS DE ATUAÇÃO</h2>
-                <!--FLEX-->
                 <div class="flex">
-                    <!--ESPECIALIDADES-BOX-->
-                    <div class="especialidades-box">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>Desenvolvimento Full Stack</h3>
-                        <p>Sou desenvolvedora full stack — ou seja, faço tanto a parte que “funciona nos bastidores” quanto aquela parte bonitinha que você vê. Adoro transformar ideias em sites e aplicativos que funcionam redondinho, seja no computador ou no celular. Gosto de juntar um visual bacana com uma navegação fácil, pra todo mundo usar sem estresse. Cuido do projeto do começo ao fim, garantindo que ele seja rápido, responsivo e pronto pra qualquer desafio — sempre evitando aqueles erros chatos que ninguém quer enfrentar.</p>
+                    <!-- CARD 1 -->
+                    <div class="especialidades-box card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-code-slash"></i>
+                                <h3>Desenvolvimento Full Stack</h3>
+                                <p>Sou desenvolvedora full stack — ou seja, faço tanto a parte que “funciona nos bastidores” quanto aquela parte bonitinha que você vê. Adoro transformar ideias em sites e aplicativos que funcionam redondinho, seja no computador ou no celular. Gosto de juntar um visual bacana com uma navegação fácil, pra todo mundo usar sem estresse. Cuido do projeto do começo ao fim, garantindo que ele seja rápido, responsivo e pronto pra qualquer desafio — sempre evitando aqueles erros chatos que ninguém quer enfrentar.</p>
+                            </div>
+                            <div class="card-back">
+                                <!--
+                                <h4>Projetos</h4>
+                                <ul>
+                                    <li>Sistema de Automação de Processos com Python</li>
+                                    <li>Website Corporativo Responsivo</li>
+                                    <li>Dashboard Interativo para Análise de Dados</li>
+                                </ul>
+                                -->
+                            </div>
+                        </div>
                     </div>
-                    <!--ESPECIALIDADES-BOX-->
-                    <div class="especialidades-box">
-                        <i class="bi bi-search"></i>
-                        <h3>Perícia Digital Forense</h3>
-                        <p>Como perita digital forense, sou tipo uma detetive dos dados: encontro verdades escondidas em meio a um monte de informação complicada — sempre na linha da ética, claro! Atuo em processos legais envolvendo tecnologia, usando métodos precisos e tecnologia moderna para garantir que as provas sejam confiáveis. Cada relatório que faço é uma peça importante para o processo e ajuda a prevenir problemas futuros.</p>
+                    <!-- CARD 2 -->
+                    <div class="especialidades-box card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-search"></i>
+                                <h3>Perícia Digital Forense</h3>
+                                <p>Como perita digital forense, sou tipo uma detetive dos dados: encontro verdades escondidas em meio a um monte de informação complicada — sempre na linha da ética, claro! Atuo em processos legais envolvendo tecnologia, usando métodos precisos e tecnologia moderna para garantir que as provas sejam confiáveis. Cada relatório que faço é uma peça importante para o processo e ajuda a prevenir problemas futuros.</p>
+                            </div>
+                            <div class="card-back">
+                                <!--
+                                <h4>Atuação</h4>
+                                <ul>
+                                    <li>Perícia Judicial</li>
+                                    <li>Elaboração de Laudos Periciais</li>
+                                    <li>Análise e Investigação de Evidências Digitais</li>
+                                </ul>
+                                -->
+                            </div>
+                        </div>
                     </div>
-                    <!--ESPECIALIDADES-BOX-->
-                    <div class="especialidades-box">
-                        <i class="bi bi-lightbulb"></i>
-                        <h3>Consultoria em Tecnologia e Segurança</h3>
-                        <p>Como consultora, sou aquela parceira que ajuda sua empresa a não perder a cabeça com tecnologia e segurança. Juntos, encontramos soluções simples e eficazes para os desafios do dia a dia, tornando tudo mais fácil, seguro e tranquilo. Meu objetivo é garantir que você tome as melhores decisões sem estresse — pode contar comigo para descomplicar o que parece complicado!</p>
+                    <!-- CARD 3 -->
+                    <div class="especialidades-box card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-lightbulb"></i>
+                                <h3>Consultoria</h3>
+                                <p>Como consultora, sou aquela parceira que ajuda sua empresa a não perder a cabeça com tecnologia e segurança. Juntos, encontramos soluções simples e eficazes para os desafios do dia a dia, tornando tudo mais fácil, seguro e tranquilo. Meu objetivo é garantir que você tome as melhores decisões sem estresse — pode contar comigo para descomplicar o que parece complicado!</p>
+                            </div>
+                            <div class="card-back">
+                                <!--
+                                <h4>Consultorias</h4>
+                                <ul>
+                                    <li>SAP QM e ABAP</li>
+                                    <li>Suporte e Gestão de Serviços de TI</li>
+                                    <li>Compliance e Auditoria de TI</li>
+                                </ul>
+                                -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--FLEX-->
             </div>
-            <!--INTERFACE-->
         </section>
         <!--SECTION ESPECIALIDADES-->
+        <!--SECTION HABILIDADES-->
+        <section class="skills" id="skills">
+             <!--INTERFACE-->
+            <div class="interface">
+                <h2 class="titulo">HABILIDADES TÉCNICAS & FERRAMENTAS</h2>
+                <!--FLEX-->
+                <div class="flex">
+                <!-- Linguagens -->
+                <div class="skills-box">
+                    <h3><i class="bi bi-code-slash"></i> Linguagens</h3>
+                    <div class="skill">
+                    <span>ABAP</span>
+                    <div class="skill-bar"><div style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar"><div style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar"><div style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>Java</span>
+                    <div class="skill-bar"><div style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div style="width: 55%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Bancos de Dados -->
+                <div class="skills-box">
+                    <h3><i class="bi bi-database-fill"></i> Bancos de Dados</h3>
+                    <div class="skill">
+                    <span>SQL</span>
+                    <div class="skill-bar"><div style="width: 100%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>PostgreSQL</span>
+                    <div class="skill-bar"><div style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>MySQL</span>
+                    <div class="skill-bar"><div style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                    <span>MongoDB</span>
+                    <div class="skill-bar"><div style="width: 80%;"></div></div>
+                    </div>
+                     <div class="skill">
+                    <span>Oracle PL/SQL</span>
+                    <div class="skill-bar"><div style="width: 50%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skills-box">
+                    <h3><i class="bi bi-tools"></i> Frameworks &amp; Tools</h3>
+                    <ul class="tools-list">
+                    <li>Power BI</li>
+                    <li>Git</li>
+                    <li>Jira</li>
+                    <li>Confluence</li>
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!--SECTION HABILIDADES-->
         <!--SECTION SOBRE-->
         <section class="sobre" id="sobre">
             <!--INTERFACE-->
@@ -144,20 +257,94 @@
             </div>
             <!--INTERFACE-->
         </section>
-        <!--SECTION SOBRE-->
+        <!--SECTION FORMACAO-->
+        <section class="formacao" id="formacao">
+            <div class="interface">
+                <h2 class="titulo">FORMAÇÃO TÉCNICA</h2>
+                <div class="flex">
+                    <!-- Formação 1 -->
+                    <div class="formacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i> Técnica em Eletroeletrônica</h3>
+                        <p>SENAI</p>
+                        <span>Concluído • 2015</span>
+                    </div>
+                    <!-- Formação 2 -->
+                    <div class="formacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i> Engenharia da Computação</h3>
+                        <p>Centro Universitário Presidente Antônio Carlos (UNIPAC)</p>
+                        <span>Concluído • 2022</span>
+                    </div>
+                    <!-- Formação 3 -->
+                    <div class="formacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i> Pós-graduação em Cybersegurança e Governança de Dados</h3>
+                        <p>PUC MINAS</p>
+                        <span>Em andamento • Conclusão prevista 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SECTION CERTIFICACAO-->
+        <section class="certificacao" id="certificacao">
+            <div class="interface">
+                <h2 class="titulo">CERTIFICAÇÕES</h2>
+                <div class="flex">
+                <!-- Certificação 1 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>Microsoft Power BI Para Data Science</h3>
+                        <p>Data Science Academy</p>
+                        <span>Concluído • 2020</span>
+                    </div>
+                    <!-- Certificação 2 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>SAP QM ECC & S4Hana</h3>
+                        <p>IT Solutionss Knowledge Education</p>
+                        <span>Concluído • 2021</span>
+                    </div>
+                    <!-- Certificação 3 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>SAP ABAP Academy</h3>
+                        <p>Trainning Education</p>
+                        <span>Concluído • 2021</span>
+                    </div>
+                    <!-- Certificação 4 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>Engenheiro(a) de Software Ágil</h3>
+                        <p>XP Educação</p>
+                        <span>Concluído • 2024</span>
+                    </div>
+                    <!-- Certificação 5 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>Analista de Processos de Negócios</h3>
+                        <p>XP Educação</p>
+                        <span>Concluído • 2024</span>
+                    </div>       
+                     <!-- Certificação 6 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>Desenvolvedor(a) Python</h3>
+                        <p>XP Educação</p>
+                        <span>Concluído • 2024</span>
+                    </div>     
+                    <!-- Certificação 7 -->
+                    <div class="certificacao-box">
+                        <h3><i class="bi bi-mortarboard-fill"></i>Banco de Dados Oracle PL/SQL</h3>
+                        <p>Instituto Matera</p>
+                        <span>Concluído • 2024</span>
+                    </div>                    
+                </div>
+        </section>
         <!--SECTION CONTATO-->
         <section id="contato" class="contato">
             <!--FORM-->
             <div class="form">
                 <!--INTERFACE-->
                 <div class="interface">
-                    <h2 class="titulo">FALA COMIGO.</h2>
+                    <h2 class="titulo">FALA COMIGO!</h2>
                     <!--FORMULARIO-->
                     <form action="https://formspree.io/f/xzzbdzwg" method="post">
-                        <input type="text" name="name" id="=" placeholder="Seu nome completo:" required>
+                        <input type="text" name="name" placeholder="Seu nome completo:" required>
                         <input type="email" name="email" placeholder="Seu e-mail:" required>
-                        <input type="text" name="phone" id="=" placeholder="Seu telefone:" required>
-                        <textarea name="message" id="" placeholder="Sua mensagem:"></textarea>
+                        <input type="text" name="phone" placeholder="Seu telefone:" required>
+                        <textarea name="message" placeholder="Sua mensagem:"></textarea>
                         <div class="btn-enviar"><input type="submit" value="Enviar"></div>
                     </form>
                     <!--FORMULARIO-->
@@ -167,42 +354,28 @@
             <!--FORM-->
         </section>
         <!--SECTION CONTATO-->
-
          <!--FOOTER-->
-         <footer>
-            <!--INTERFACE-->
-            <div class="interface">
-                <!--LINE FOOTER-->
-                <div class="line-footer">
-                    <!--FLEX-->
-                    <div class="flex">
-                        <!--EMAIL-->
-                        <div class="email">
-                            <p><i class="bi bi-envelope-fill"></i><a href="mailto:emilianacandsilva@gmail.com">emilianacandsilva@gmail.com</a></p>
-                        </div>
-                        <!--EMAIL-->
-                        <!--BTN SOCIAL-->
-                        <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/emilianacandidasilva/"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://wa.me/+5532998406067"><button><i class="bi bi-whatsapp"></i></button></a>
-                        </div>
-                        <!--BTN SOCIAL-->
-                    </div>
-                    <!--FLEX-->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                <img src="images/logo.png">
+                <h3>Emiliana Candida</h3>
+                <p>Desenvolvedora | Perita Digital | Engenheira</p>
                 </div>
-                <!--LINE FOOTER-->
-                <!--LINE FOOTER-->
-                <div class="line-footer borda">
-                    <!--LOGO FOOTER-->
-                    <div class="logo-footer">
-                        <img src="./images/logo.png" alt="logo">
-                    </div>
-                    <!--LOGO FOOTER-->
+
+                <div class="footer-social">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/emilianacandidasilva/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/emilianac" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="mailto:emilianacandida@gmail.com" aria-label="E-mail"><i class="bi bi-envelope-fill"></i></a>
                 </div>
-                <!--LINE FOOTER-->
+                </div>
             </div>
-            <!--INTERFACE-->
-         </footer>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Emiliana Cândida. Todos os direitos reservados.</p>
+            </div>
+        </footer>
          <!--FOOTER-->
     </body>
     <!--BODY-->
