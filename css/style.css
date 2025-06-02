@@ -214,56 +214,6 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
-.especialidades .card {
-    width: 360px;
-    height: auto;
-    min-height: 500px;
-    perspective: 1000px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-}
-
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-back {
-    position: absolute;
-    width: 100%;
-    backface-visibility: hidden;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    color: var(--grey);
-    transform: rotateY(180deg);
-}
-
-.card-back h4{
-    font-size: 28px;
-    color: var(--nude);
-    margin: 15px 0;
-}
-
-.card.flipped .card-back {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.card-front {
-    transition: opacity 0.5s;
-}
-
-.card.flipped .card-front {
-    opacity: 0;
-    pointer-events: none;
-}
-
 /* SECTION HABILIDADES */
 section.skills {
   padding: 100px 10%;
@@ -405,7 +355,7 @@ section.formacao .titulo {
 section.formacao .flex {
   gap: 50px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
 }
 
 .formacao-box {
@@ -445,6 +395,51 @@ section.formacao .flex {
   color: var(--nude);
   font-weight: 500;
 }
+
+.formacao .card {
+    width: 360px;
+    height: auto;
+    min-height: 500px;
+    perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    color: var(--grey);
+    transform: rotateY(180deg);
+}
+
+.card-back h4{
+    font-size: 28px;
+    color: var(--nude);
+    margin: 15px 0;
+}
+
+.card.flipped .card-back {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.card.flipped .card-front {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 /* SECTION CERTIFICACAO */
 
