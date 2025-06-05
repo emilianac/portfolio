@@ -726,6 +726,13 @@ form .btn-enviar input:hover{
         width: 100%;
      }
 
+    .certificacao-box {
+        padding: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
      /* FORMULARIO */
      section.contato{
         padding: 100px 4%;
